@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ChatTestApp</title>
+    <title>Slack風チャットルーっむ</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta neme="viewport" content="width=divice=width,initial-scale=1">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render 'shared/header' %>
     <%= yield %>
   </body>
 </html>
